@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Staff</title>
+      <link rel="stylesheet" href="external.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .staff-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .staff-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .staff-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .staff-card h3 {
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .staff-card p {
+      margin: 5px 0;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+        <div class="top-navbar">
+        <marquee behaviour="scroll" direction="left" scrollamount="9">
+            Welcome to our website! Enroll now to get special discount on all courses! &nbsp;&nbsp;&nbsp;
+        </marquee>
+    </div>
+    <div>
+        <header class="main-header">
+            <div class="logo">
+                <img src="image/download.jpeg" alt="logo">
+            </div>
+            <div class="main-menubar">
+                <div class="mobile-menu">
+
+                    <nav>
+                        <ul class="menu-uld">
+                            <li>
+                                <a class="same" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="same" href="">Courses <i class="fa-solid fa-caret-down"></i></a>
+                                <ul class="dropdown">
+                                    <li><a href="#">Web designing</a></li>
+                                    <li><a href="#">Digital Marketing</a></li>
+                                    <li><a href="#">Graphic designing</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="same" href="">Contact</a></li>
+
+                            <li>
+                                <a class="same" href="">Faculty <i class="fa-solid fa-caret-down"></i></a>
+
+                                <ul class="dropdown">
+                                    <li>
+                                        <a href="#">Art Faculty <i class="fa-solid fa-caret-down"></i> </a>
+                                        <ul class="dropdown art">
+                                            <li><a href="#">English</a></li>
+                                            <li><a href="#">Hindi</a></li>
+                                            <li><a href="#">Psychology</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Science Faculty <i class="fa-solid fa-caret-down"></i></a>
+                                        <ul class="dropdown science">
+                                            <li><a href="#">Physics</a></li>
+                                            <li><a href="#">C.Sc</a></li>
+                                            <li><a href="#">Chemistry</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Commerce Faculty <i class="fa-solid fa-caret-down"></i></a>
+                                        <ul class="dropdown commerce">
+                                            <li><a href="#">Accounts</a></li>
+                                            <li><a href="#">Economics</a></li>
+                                            <li><a href="#">Business</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <li><a class="same" href="">Library <i class="fa-solid fa-caret-down"></i></a>
+                                <ul class="dropdown lib">
+                                    <li><a href="#">About Library</a></li>
+                                    <li><a href="#">Library Staff</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="same" href="#aboutmain">About Us</a></li>
+                            <a class="samehgfhfgj" id="openSearch"><i class="fas fa-search"></i></a>
+
+
+                            <!-- Popup Overlay -->
+                            <div class="overlaynew" id="searchOverlay">
+                                <div class="close-btn" id="closeSearch">&times;</div>
+                                <div class="search-box">
+                                    <input type="text" placeholder="Search here...">
+                                </div>
+                            </div>
+
+                            <a class="same" target="_blank" href="loginform.html"><i class="fa-solid fa-user"></i></a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-menu-1"><i class="fa-solid fa-ellipsis-vertical"></i>
+                <a class="same" target="_blank" href="loginform.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </header>
+  <section class="header">
+    <h1>Our Library Staff</h1>
+    <p>Meet the team that keeps our library running smoothly</p>
+  </section>
+
+  <section class="staff-container">
+    <div class="staff-card">
+      <!-- <img src="https://via.placeholder.com/100" alt="Librarian"> -->
+      <h3>Mr. Pawan K. Boora</h3>
+      <p>Chief Librarian</p>
+      <p>M.L.I.Sc., NET, PGDLAN</p>
+    </div>
+
+    <div class="staff-card">
+      <!-- <img src="https://via.placeholder.com/100" alt="Assistant"> -->
+      <h3>Mrs. Anjana Rani</h3>
+      <p>Library Restorer</p>
+      <p>M.A., M.L.I.Sc.</p>
+    </div>
+
+    <div class="staff-card">
+      <!-- <img src="https://via.placeholder.com/100" alt="Technician"> -->
+      <h3>Mr. Naresh Gaur</h3>
+      <p>Library Restorer</p>
+      <p>10th</p>
+    </div>
+
+    <div class="staff-card">
+      <!-- <img src="https://via.placeholder.com/100" alt="Support Staff"> -->
+      <h3>Sh. Nishchay Jain</h3>
+      <p>Library Attendant</p>
+      <!-- <p>Email: alex@library.com</p> -->
+    </div>
+  </section>
+  
+    <footer>
+        <div class="footer">
+
+            <div class="footer-0">
+                <div class="footer-1">
+                    <img src="/image/footerlogo.png" alt="">
+                </div>
+                <h2 class="footer-2">S.A Jain College</h2>
+                <p class="box">Box 35300 <br>
+                    1810 Campus Way NE <br>
+                    Bothell, WA 98011-8246</p> <br>
+                <!-- <h4 class="kuk"><i style=" color: rgb(114, 161, 114);" class="fa-solid fa-phone"></i> +1-2534-4456-345
+                </h4> -->
+                <a class="kuk" href="tel:7018793993"><i style=" color: rgb(114, 161, 114);"
+                        class="fa-solid fa-phone"></i>&nbsp;&nbsp;7018793993</a>
+                <!-- <h4 class="kuk">admin@kukuni.edu</h4> -->
+                <a class="kuk" href="mailto:nitinkumar93993@gmail.com"><i style=" color: rgb(114, 161, 114);"
+                        class="fa-solid fa-phone"></i>&nbsp;&nbsp;nitinkumar93993@gmail.com</a>
+                <div class="kuk-1">
+                </div>
+            </div>
+
+
+            <div class="footer-3">
+                <h1 class="kuk-0">Our Campus</h1>
+                <div class="kuk-2"></div>
+                <p class="box-1">Acedemic</p>
+                <p class="box-1"> Planning & Administration </p>
+                <p class="box-1"> Campus Safety </p>
+                <p class="box-1"> Office of the Chancellor</p>
+                <p class="box-1">Facility Services </p>
+                <p class="box-1">Human Resources</p>
+
+            </div>
+            <div class="footer-3">
+                <h1 class="kuk-0"> Campus Life</h1>
+                <div class="kuk-2"></div>
+                <p class="box-1">Accessibilty</p>
+                <p class="box-1"> Financial Aid </p>
+                <p class="box-1"> Food Services </p>
+                <p class="box-1"> Housing</p>
+                <p class="box-1"> Information Technologies</p>
+                <p class="box-1">Student Life</p>
+
+            </div>
+            <div class="footer-3">
+                <h1 class="kuk-0">Academics</h1>
+                <div class="kuk-2"></div>
+                <p class="box-1">Canvas</p>
+                <p class="box-1"> Catalyst </p>
+                <p class="box-1"> Library </p>
+                <p class="box-1"> Time Schedule</p>
+                <p class="box-1">Apply For Admission </p>
+                <p class="box-1">Pay My Tuition</p>
+
+            </div>
+        </div>
+
+        <div class="copyright-main">
+            <div class="copyright-text">
+                <h4>Copyright All Right Reserved 2025, GoodLayers</h4>
+            </div>
+            <div class="footer-icon">
+                <div><i style="color: green;" class="fa-brands fa-facebook"></i></div>
+                <div><i style="color: green;" class="fa-brands fa-instagram"></i></div>
+                <div><i style="color: green;" class="fa-brands fa-twitter"></i></div>
+                <div><i style="color: green;" class="fa-brands fa-linkedin"></i></div>
+                <div><i style="color: green;" class="fa-brands fa-whatsapp"></i></div>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+</html>

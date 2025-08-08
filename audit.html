@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auditorium</title>
+    <link rel="stylesheet" href="external.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+        .audit-1 {
+            background-color: grey;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: rgb(215, 211, 211);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            /* text-align: center; */
+            color: #645959;
+            text-decoration: underline;
+        }
+
+        .auditorium-image {
+            width: 100%;
+            height: 50vh;
+            margin: 20px 0;
+            border-radius: 6px;
+        }
+
+        .description {
+            font-size: 20px;
+            color: #444;
+            line-height: 1.6;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        #moreText {
+            display: none;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .read-more-btn {
+            background-color: #0077cc;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            margin-top: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .read-more-btn:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-navbar">
+        <marquee behaviour="scroll" direction="left" scrollamount="9">
+            Welcome to our website! Enroll now to get special discount on all courses! &nbsp;&nbsp;&nbsp;
+        </marquee>
+    </div>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="image/download.jpeg" alt="logo">
+        </div>
+        <div class="main-menubar">
+            <div class="mobile-menu">
+
+                <nav>
+                    <ul class="menu-uld">
+                        <li>
+                            <a class="same" href="/">Home</a>
+                        </li>
+                        <li>
+                            <a class="same" href="">Courses <i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="#">Web designing</a></li>
+                                <li><a href="#">Digital Marketing</a></li>
+                                <li><a href="#">Graphic designing</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="same" href="">Contact</a></li>
+
+                        <li>
+                            <a class="same" href="">Faculty <i class="fa-solid fa-caret-down"></i></a>
+
+                            <ul class="dropdown">
+                                <li>
+                                    <a href="#">Art Faculty <i class="fa-solid fa-caret-down"></i> </a>
+                                    <ul class="dropdown art">
+                                        <li><a href="#">English</a></li>
+                                        <li><a href="#">Hindi</a></li>
+                                        <li><a href="#">Psychology</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Science Faculty <i class="fa-solid fa-caret-down"></i></a>
+                                    <ul class="dropdown science">
+                                        <li><a href="#">Physics</a></li>
+                                        <li><a href="#">C.Sc</a></li>
+                                        <li><a href="#">Chemistry</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Commerce Faculty <i class="fa-solid fa-caret-down"></i></a>
+                                    <ul class="dropdown commerce">
+                                        <li><a href="#">Accounts</a></li>
+                                        <li><a href="#">Economics</a></li>
+                                        <li><a href="#">Business</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <li><a class="same" href="">Library <i class="fa-solid fa-caret-down"></i></a>
+                            <ul class="dropdown lib">
+                                <li><a href="#">About Library</a></li>
+                                <li><a href="#">Library Staff</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="same" href="/about.html">About Us</a></li>
+                        <a class="samehgfhfgj" id="openSearch"><i class="fas fa-search"></i></a>
+
+
+                        <!-- Popup Overlay -->
+                        <div class="overlaynew" id="searchOverlay">
+                            <div class="close-btn" id="closeSearch">&times;</div>
+                            <div class="search-box">
+                                <input type="text" placeholder="Search here...">
+                            </div>
+                        </div>
+
+                        <a class="same" target="_blank" href="loginform.html"><i class="fa-solid fa-user"></i></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="mobile-menu-1"><i class="fa-solid fa-ellipsis-vertical"></i>
+            <a class="same" target="_blank" href="loginform.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Auditorium</h1>
+        <img src="/image/auditorium.jpeg" alt="Auditorium" class="auditorium-image" />
+
+        <div class="description">
+            Our state-of-the-art auditorium is designed to host a variety of events including seminars, conferences, and
+            cultural programs. It features high-end acoustics, comfortable seating, and advanced lighting systems.
+
+            <span id="moreText">
+                The auditorium can accommodate over 500 guests and is fully equipped with projectors, wireless
+                microphones, and centralized air conditioning. It's an ideal space for school gatherings, live
+                performances, and professional talks. The stage is modular and can be adapted for different setups.
+            </span>
+
+            <br />
+            <button onclick="toggleReadMore()" class="read-more-btn" id="readMoreBtn">Read More</button>
+        </div>
+    </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+
+            <div class="footer-0">
+                <div class="footer-1">
+                    <img src="/image/footerlogo.png" alt="">
+                </div>
+                <h2 class="footer-2">S.A Jain College</h2>
+                <p class="box">Box 35300 <br>
+                    1810 Campus Way NE <br>
+                    Bothell, WA 98011-8246</p> <br>
+                <!-- <h4 class="kuk"><i style=" color: rgb(114, 161, 114);" class="fa-solid fa-phone"></i> +1-2534-4456-345
+                </h4> -->
+                <a class="kuk" href="tel:7018793993"><i style=" color: rgb(114, 161, 114);"
+                        class="fa-solid fa-phone"></i>&nbsp;&nbsp;7018793993</a>
+                <!-- <h4 class="kuk">admin@kukuni.edu</h4> -->
+                <a class="kuk" href="mailto:nitinkumar93993@gmail.com"><i style=" color: rgb(114, 161, 114);"
+                        class="fa-solid fa-phone"></i>&nbsp;&nbsp;nitinkumar93993@gmail.com</a>
+                <div class="kuk-1">
+                </div>
+            </div>
+
+
+            <div class="footer-3">
+                <h1 class="kuk-0">Our Campus</h1>
+                <div class="kuk-2"></div>
+                <p class="box-1">Acedemic</p>
+                <p class="box-1"> Planning & Administration </p>
+                <p class="box-1"> Campus Safety </p>
+                <p class="box-1"> Office of the Chancellor</p>
+                <p class="box-1">Facility Services </p>
+                <p class="box-1">Human Resources</p>
+
+            </div>
+            <div class="footer-3">
+                <h1 class="kuk-0"> Campus Life</h1>
+                <div class="kuk-2"></div>
+                <p class="box-1">Accessibilty</p>
+                <p class="box-1"> Financial Aid </p>
+                <p class="box-1"> Food Services </p>
+                <p class="box-1"> Housing</p>
+                <p class="box-1"> Information Technologies</p>
+                <p class="box-1">Student Life</p>
+
+            </div>
+            <div class="footer-3">
+                <h1 class="kuk-0">Academics</h1>
+                <div class="kuk-2"></div>
+                <p class="box-1">Canvas</p>
+                <p class="box-1"> Catalyst </p>
+                <p class="box-1"> Library </p>
+                <p class="box-1"> Time Schedule</p>
+                <p class="box-1">Apply For Admission </p>
+                <p class="box-1">Pay My Tuition</p>
+
+            </div>
+        </div>
+
+        <div class="copyright-main">
+            <div class="copyright-text">
+                <h4>Copyright All Right Reserved 2025, GoodLayers</h4>
+            </div>
+            <div class="footer-icon">
+                <div><i style="color: green;" class="fa-brands fa-facebook"></i></div>
+                <div><i style="color: green;" class="fa-brands fa-instagram"></i></div>
+                <div><i style="color: green;" class="fa-brands fa-twitter"></i></div>
+                <div><i style="color: green;" class="fa-brands fa-linkedin"></i></div>
+                <div><i style="color: green;" class="fa-brands fa-whatsapp"></i></div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <script>
+        function toggleReadMore() {
+            var moreText = document.getElementById("moreText");
+            var btnText = document.getElementById("readMoreBtn");
+
+            if (moreText.style.display === "none") {
+                moreText.style.display = "inline";
+                btnText.innerText = "Read Less";
+            } else {
+                moreText.style.display = "none";
+                btnText.innerText = "Read More";
+            }
+        }
+
+        // Show less by default
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("moreText").style.display = "none";
+        });
+    </script>
+
+</body>
+
+</html>
